@@ -6,12 +6,13 @@ namespace packageProductosPila
     [Serializable]
     public class Producto
     {
-        public string id;
-        public string nombre;
-        public string tipo;
-        public float peso;
-        public float precio;
-        public int tiempo;
+        private string id;
+        private string nombre;
+        private string tipo;
+        private float peso;
+        private float precio;
+        private int tiempo;
+
 
         public Producto()
         {
@@ -26,5 +27,11 @@ namespace packageProductosPila
             this.precio = precio;
             this.tiempo = tiempo;
         }
+        public string Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Tipo { get => tipo; set => tipo = value; }
+        public float Peso { get => peso; set => peso = value; }
+        public float Precio { get => precio; set => precio = value; }
+        public int Tiempo { get => tiempo; set => tiempo = value; }
     }
 }
