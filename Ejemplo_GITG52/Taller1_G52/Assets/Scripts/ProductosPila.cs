@@ -1,16 +1,30 @@
 using UnityEngine;
+using System;
 
-public class ProductosPila : MonoBehaviour
+namespace packageProductosPila
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Serializable]
+    public class Producto
     {
-        
-    }
+        public string id;
+        public string nombre;
+        public string tipo;
+        public float peso;
+        public float precio;
+        public int tiempo;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public Producto()
+        {
+        }
+
+        public Producto(string id, string nombre, string tipo, float peso, float precio, int tiempo)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.tipo = tipo;
+            this.peso = peso;
+            this.precio = precio;
+            this.tiempo = tiempo;
+        }
     }
 }
