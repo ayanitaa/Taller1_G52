@@ -20,7 +20,7 @@ public class Exportador
 {
     public static void Guardar(ExportJSON j)
     {
-        string json = JsonUtility.ToJson(r, true);
+        string json = JsonUtility.ToJson(j, true);
 
         string ruta = Path.Combine(Application.persistentDataPath, "resultados.json");
         File.WriteAllText(ruta, json);
