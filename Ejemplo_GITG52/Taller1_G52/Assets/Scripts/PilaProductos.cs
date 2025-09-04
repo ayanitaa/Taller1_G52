@@ -6,7 +6,13 @@ public class PilaProductos : MonoBehaviour
 {
     private Stack<Producto> pila;
 
-    public void Apilar (Producto producto)
+   
+    void Awake()
+    {
+        pila = new Stack<Producto>();
+    }
+
+    public void Apilar(Producto producto)
     {
         pila.Push(producto);
     }
@@ -24,10 +30,11 @@ public class PilaProductos : MonoBehaviour
         }
     }
 
-    public int tamañoPila()
+    public int tamanoPila()
     {
         return pila.Count;
     }
+
     public Producto VerTope()
     {
         if (pila.Count > 0)
@@ -41,3 +48,4 @@ public class PilaProductos : MonoBehaviour
         }
     }
 }
+
