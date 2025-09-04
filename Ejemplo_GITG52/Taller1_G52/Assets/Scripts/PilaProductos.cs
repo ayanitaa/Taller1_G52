@@ -25,7 +25,7 @@ public class PilaProductos : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("La pila está vacía. No se puede desapilar.");
+            Debug.LogWarning("La pila esta vacia. No se puede desapilar.");
             return null;
         }
     }
@@ -43,7 +43,7 @@ public class PilaProductos : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("La pila está vacía. No hay tope.");
+            Debug.LogWarning("La pila esta vacia. No hay tope.");
             return null;
         }
     }
