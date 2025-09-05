@@ -269,6 +269,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1385,7 +1424,57 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      audifonos_0: 1455206138050320482
+      audifonos_1: -1809129135968956948
+      audifonos_10: -6556702345005840915
+      audifonos_11: 1162422009776195571
+      audifonos_12: -7649793045364228504
+      audifonos_13: 5669665529540270674
+      audifonos_14: -5548908173276765259
+      audifonos_15: 1018058922961403460
+      audifonos_16: 3818220514103074495
+      audifonos_17: -8946469956040051320
+      audifonos_18: -4604212200720153554
+      audifonos_19: -2542508344204962774
+      audifonos_2: 1254105415221388948
+      audifonos_20: 1156362315615466089
+      audifonos_21: -4741033332462350905
+      audifonos_22: 3356198704399093703
+      audifonos_23: 223874588153460719
+      audifonos_24: -334969940404042312
+      audifonos_25: 5244547154596154403
+      audifonos_26: 7199938866990161397
+      audifonos_27: 1874207529681780457
+      audifonos_28: 8274827264999342111
+      audifonos_29: 7420770861759095947
+      audifonos_3: -1950456351285245691
+      audifonos_30: 4931581984574240881
+      audifonos_31: -4290110945462946134
+      audifonos_32: 4207949624336736783
+      audifonos_33: -8613060024048576108
+      audifonos_34: 873017206760684897
+      audifonos_35: 8995629471186074939
+      audifonos_36: 1839291496206038647
+      audifonos_37: 4189111344469614454
+      audifonos_38: -5757344236194224990
+      audifonos_39: -1141621973573655756
+      audifonos_4: 7329693194006554259
+      audifonos_40: -9176828701866450498
+      audifonos_41: -3741083225426643294
+      audifonos_42: 6332843654463218975
+      audifonos_43: -5683473618965557871
+      audifonos_44: -7909147403299859073
+      audifonos_45: 6394619234578742689
+      audifonos_46: -3221686978730262417
+      audifonos_47: 5751244834233115341
+      audifonos_48: 4903382089006255889
+      audifonos_49: 250944149238855438
+      audifonos_5: 5766977065298355181
+      audifonos_6: 6382603933046178099
+      audifonos_7: 8016243464491063081
+      audifonos_8: -2390281641059293289
+      audifonos_9: 8113976758034270649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
