@@ -8,7 +8,7 @@ public class ExportJSON : MonoBehaviour
     public int total_generado;        
     public int total_despachados;   
     public int total_pila;           
-    public int tiempo_promedio_despacho;
+    public float tiempo_promedio_despacho;
     public Dictionary<string, int> despachadosPorTipo;
     public string tipoMasDespachado;
 }
@@ -36,7 +36,7 @@ public class Exportador
         public int total_generado;         
         public int total_despachados;      
         public int total_pila;           
-        public int tiempo_promedio_despacho;
+        public float tiempo_promedio_despacho;
         public List<TipoCantidad> despachadosPorTipo;
         public string tipoMasDespachado;
 

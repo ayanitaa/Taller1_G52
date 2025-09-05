@@ -58,6 +58,8 @@ public class ControllerEscena : MonoBehaviour
         if (coGenerar != null) StopCoroutine(coGenerar);
         if (coDespachar != null) StopCoroutine(coDespachar);
 
+        Debug.Log("🛑 Simulación detenida");
+
         MostrarResultadosFinales();
     }
     void CargarCatalogoDesdeTxt()
@@ -92,6 +94,13 @@ public class ControllerEscena : MonoBehaviour
     {
         while (simulacionActiva)
         {
+            if (catalogo.Count == 0)
+            {
+                Debug.LogWarning("⚠️ Catálogo vacío. No se pueden generar productos.");
+                yield return new WaitForSeconds(1f);
+                continue;
+            }
+
             int cantidad = Random.Range(1, 4); 
             for (int i = 0; i < cantidad; i++)
             {
@@ -128,13 +137,14 @@ public class ControllerEscena : MonoBehaviour
                         despachadosPorTipo[prod.Tipo] = 0;
                     despachadosPorTipo[prod.Tipo]++;
 
+
                     ActualizarIndicadores();
                     yield return new WaitForSeconds(prod.Tiempo);
                 }
             }
             else
             {
-                yield return null;
+                yield return new WaitForSeconds(0.1f);
             }
         }
     }
@@ -146,7 +156,7 @@ public class ControllerEscena : MonoBehaviour
             string textoTope = tope != null ? $"{tope.Nombre} ({tope.Tipo})" : "-";
 
             txtIndicadores.text =
-                "📊 INDICADORES EN VIVO\n\n" +
+                "INDICADORES EN VIVO\n\n" +
                 $"Pila: {pilaProductos.tamanoPila()}\n" +
                 $"Tope: {textoTope}\n" +
                 $"Generados: {totalGenerados}\n" +
