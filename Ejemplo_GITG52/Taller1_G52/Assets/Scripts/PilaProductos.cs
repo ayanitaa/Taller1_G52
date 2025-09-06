@@ -5,14 +5,14 @@ using packageProductosPila;
 public class PilaProductos : MonoBehaviour
 {
     [Header("Visual")]
-    public int maxVisual = 10;                // máximo visible
+    public int maxVisual = 10;                // maximo visible
     public Transform contenedorUI;            // Panel (contenedor)
     public GameObject prefabProductoUI;       // Prefab del producto UI
 
     private Stack<Producto> pila = new Stack<Producto>();
     private List<GameObject> instanciasUI = new List<GameObject>();
 
-    // ----------------- APILAR -----------------
+    // APILAR
     public void Apilar(Producto producto)
     {
         // Lógica
@@ -29,7 +29,7 @@ public class PilaProductos : MonoBehaviour
 
         Debug.Log($"📦 APILAR: {producto.Nombre} | pila lógica={pila.Count} | visibles={instanciasUI.Count}");
 
-        // Si pasa el límite → borrar el que quedó arriba
+        // Si pasa el límite entonces borrar el que quedó arriba
         if (instanciasUI.Count > maxVisual)
         {
             GameObject eliminado = instanciasUI[0];
@@ -40,7 +40,7 @@ public class PilaProductos : MonoBehaviour
         }
     }
 
-    // ----------------- DESAPILAR -----------------
+    // DESAPILAR 
     public Producto Desapilar()
     {
         if (pila.Count == 0)
@@ -52,7 +52,7 @@ public class PilaProductos : MonoBehaviour
         // Lógica
         Producto prod = pila.Pop();
 
-        // Visual → quitar el de abajo
+        // Visualmente quitar el de arriba
         if (instanciasUI.Count > 0)
         {
             GameObject go = instanciasUI[instanciasUI.Count - 1];
@@ -65,7 +65,7 @@ public class PilaProductos : MonoBehaviour
         return prod;
     }
 
-    // ----------------- CONSULTAS -----------------
+    // CONSULTAS 
     public int tamanoPila() => pila.Count;
     public Producto VerTope() => pila.Count > 0 ? pila.Peek() : null;
 }
