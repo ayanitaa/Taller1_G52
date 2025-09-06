@@ -1,16 +1,12 @@
 {
-    "total_generado": 34,
-    "total_despachados": 6,
-    "total_pila": 28,
-    "tiempo_promedio_despacho": 2.0,
+    "total_generado": 11,
+    "total_despachados": 1,
+    "total_pila": 10,
+    "tiempo_promedio_despacho": 5.0,
     "despachadosPorTipo": [
         {
             "tipo": "Basico",
-            "cantidad": 4
-        },
-        {
-            "tipo": "Pesado",
-            "cantidad": 2
+            "cantidad": 1
         }
     ],
     "tipoMasDespachado": "Basico"
